@@ -13,7 +13,7 @@ namespace FrameForAList
 		{
 			InitializeComponent();
 
-			MainPage = new FrameForAList.MainPage();
+			MainPage = new FrameForAList.Views.ShopPage();
 		}
 
 		protected override void OnStart ()

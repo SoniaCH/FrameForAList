@@ -20,28 +20,31 @@
                                     <ColumnDefinition Width="0"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <Frame BindingContext="{Binding Item1}" Padding="1" BackgroundColor="#31b0d5" HasShadow="True" OutlineColor="#bbb">
+                                <Frame BindingContext="{Binding Item1}" Padding="1" BackgroundColor="White" HasShadow="True" OutlineColor="#bbb">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="100"/>
                                             <RowDefinition Height="*"/>
                                         </Grid.RowDefinitions>
-                                        <Frame BackgroundColor="White" Padding="5" HasShadow="False">
-                                            <Image Source="{Binding Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80"/>
-                                        </Frame>
-                               
-                                         <StackLayout Grid.Row="1" Padding="5,0,5,5" Spacing="1">
+                                        
+                                        <StackLayout Grid.Row="1" Padding="5,0,5,5" Spacing="1">
 
-                                              <Label Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" 
-                                                      LineBreakMode="TailTruncation" TextColor="White" FontAttributes="Bold"/>
-                                             
-                                              <Label Text="{Binding Description}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12"
-                                                       LineBreakMode="TailTruncation" TextColor="White"/>
-                                    
-                                               <Label Text="{Binding Price}" FontSize="12" TextColor="White" HorizontalOptions="Center"  
+                                            <Label Text="{Binding Description}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12"
+                                                       LineBreakMode="TailTruncation" TextColor="Black"/>
+
+                                            <Frame BackgroundColor="White" Padding="5" HasShadow="False">
+                                                <Image Source="{Binding Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80"/>
+                                            </Frame>
+
+                                            <Label Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" 
+                                                      LineBreakMode="TailTruncation" TextColor="Black" FontAttributes="Bold"/>
+
+
+                                            <Label Text="{Binding Price}" FontSize="12" TextColor="Black" HorizontalOptions="Center"  
                                                       VerticalOptions="Center" LineBreakMode="TailTruncation"/>
-                                   
-                                         </StackLayout>
+
+                                        </StackLayout>
+
 
 
                                     </Grid> 
@@ -49,26 +52,31 @@
                                 </Frame>
 
 
-                                <Frame Grid.Column="2" IsVisible="{Binding IsVisible}" BindingContext="{Binding Item2}" Padding="1" BackgroundColor="#31b0d5" HasShadow="True" OutlineColor="#bbb">
+                                <Frame Grid.Column="2" IsVisible="{Binding IsVisible}" BindingContext="{Binding Item2}" Padding="1" BackgroundColor="White" HasShadow="True" OutlineColor="#bbb">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="100"/>
                                             <RowDefinition Height="*"/>
                                         </Grid.RowDefinitions>
-                                        <Frame BackgroundColor="White" Padding="5" HasShadow="False">
-                                            <Image Source="{Binding Image}" Aspect="AspectFill"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80"/>
-                                        </Frame>
+
                                         <StackLayout Grid.Row="1" Padding="5,0,5,5" Spacing="1">
 
-                                            <Label Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
-                                                   TextColor="White"  FontAttributes="Bold"/>
+                                            <Label Text="{Binding Description}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12"
+                                                       LineBreakMode="TailTruncation" TextColor="Black"/>
 
-                                            <Label Text="{Binding Description}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12" LineBreakMode="TailTruncation"
-                                                    TextColor="White"/>
-                                            
-                                            <Label Text="{Binding Price}" FontSize="12" TextColor="White" HorizontalOptions="Center"  VerticalOptions="Center" LineBreakMode="TailTruncation"/>
-                                            
+                                            <Frame BackgroundColor="White" Padding="5" HasShadow="False">
+                                                <Image Source="{Binding Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80"/>
+                                            </Frame>
+
+                                            <Label Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" 
+                                                      LineBreakMode="TailTruncation" TextColor="Black" FontAttributes="Bold"/>
+
+
+                                            <Label Text="{Binding Price}" FontSize="12" TextColor="Black" HorizontalOptions="Center"  
+                                                      VerticalOptions="Center" LineBreakMode="TailTruncation"/>
+
                                         </StackLayout>
+                                        
                                     </Grid>
                                 </Frame>
 
